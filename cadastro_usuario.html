@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA -Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoIntegrador</title>
+</head>
+<body>
+    <h2>Cadastro de Usuarios</h2>
+    <hr>
+    <form method="post" action="cadastro_usuario.php" enctype="multipart/form-data">
+<body>
+    <form action="cadastro_usuario.php" method="post" enctype='multipart/form-data'>
+        <table align="center">
+           
+            <tr>
+                <th colspan="2">Dados pessoais</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nome:</p>
+                </td>
+                <td><input type="text" name="nome" size="100"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Data de Nascimento:</p>
+                </td>
+                <td><input type="date" name="data_n"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>CPF:</p>
+                </td>
+                <td><input type="text" name="cpf_cliente" size="14"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Telefone ou Celular:</p>
+                </td>
+                <td><input type="text" name="telefone" size="15"></td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <p>Email:</p>
+                </td>
+                <td><input type="text" name="email" size="100"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Endereço</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Estado:
+                    </p>
+                </td>
+                <td>
+                    <select name="estado" id="estado" onchange="habilitar()">
+                        <option>Selecionar</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>CEP:</p>
+                </td>
+                <td><input type="text" name="cep" id="cep" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cidade:</p>
+                </td>
+                <td><input type="text" name="cidade" id="cidade" ></td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <p>Bairro:</p>
+                </td>
+                <td><input type="text" name="bairro" id="bairro" ></td>
+            </tr>
+ 
+            <tr>
+                <td>
+                    <p>Rua:</p>
+                </td>
+                <td><input type="text" name="rua" id="rua" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Número:</p>
+                </td>
+                <td><input type="text" name="numero" id="numero" size="4"></td>
+            </tr>
+           
+            <tr class="form-item">
+               
+                <td><input type="file" id="foto" name="foto" accept="image/*" /></td>
+            <tr class="form-item">
+                <tr>
+                    <td colspan="2"><br><input type="submit" value="Cadastrar"></td>
+                </tr>
+               
+            </div>
+        </table>
+    </form>
+</body>
+ 
+</html>
