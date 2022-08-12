@@ -11,6 +11,7 @@ CREATE TABLE cliente (
     enderecoCliente VARCHAR(200),
     emailCliente VARCHAR(60),
     telCliente VARCHAR(9),
+    dataNasc DATE,
     PRIMARY KEY (codCliente)
 );
 
