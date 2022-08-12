@@ -4,21 +4,6 @@ create database wood;
 -- selecionar banco de dados
 use wood;
 
-<<<<<<< HEAD:Cadastros/usuarios/wood.sql
--- criar tabela agenda
-create table cliente (
-    cod_cliente int not null auto_increment,
-    nome_cliente varchar(50) not null,
-    data_n varchar(50) not null,
-    cpf_cliente varchar(11) not null,
-    endereco_cliente varchar(200) not null,
-    email_ciente varchar(60) not null,
-    tel_cliente varchar(11) not null,
-    primary key(cod_cliente)
-);
-
-select * from cliente;
-=======
 CREATE TABLE cliente (
     codCliente INT NOT NULL auto_increment,
     nomeCliente VARCHAR(50),
@@ -171,4 +156,3 @@ ALTER TABLE personalizacao ADD CONSTRAINT FK_Personalizacao_1
     FOREIGN KEY (fk_Material_codMaterial)
     REFERENCES material (codMaterial)
     ON DELETE SET NULL;
->>>>>>> b7d369f411c99dea2d0af61900be5db11a1ec23a:sql/wood.sql
