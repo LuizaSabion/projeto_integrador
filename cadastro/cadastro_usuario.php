@@ -19,32 +19,32 @@ if( in_array($imageFileType,$extensions_arr) ){
     }
 }
 
-$nome = $_POST['nome'];
-$data_nasc = $_POST['data_n'];
-$cpf = $_POST['cpf_cliente'];
-$telefone = $_POST['telefone'];
-$email = $_POST['email'];
-$estado = $_POST['estado'];
-$cep = $_POST['cep'];
-$cidade = $_POST['cidade'];
-$bairro = $_POST['bairro'];
-$rua = $_POST['rua'];
-$numero = $_POST['numero'];
+$nomeCliente = $_POST['nome'];
+$dataNasc = $_POST['nascimento'];
+$cpfCliente = $_POST['cpf_cliente'];
+$telCliente = $_POST['telefone'];
+$emailCliente = $_POST['email'];
+$estadoCliente = $_POST['estado'];
+$cepCliente = $_POST['cep'];
+$cidadeCliente = $_POST['cidade'];
+$bairroCliente = $_POST['bairro'];
+$ruaCliente = $_POST['rua'];
+$numCasaCliente = $_POST['numero'];
 
-echo "Nome: $nome
-<br>Data de Nascimento: $data_nasc
-<br>CPF: $cpf
-<br>Telefone: $telefone
-<br>Email: $email
-<br>Estado: $estado
-<br>cep: $cep
-<br>Cidade: $cidade
-<br>Bairro: $bairro
-<br>Rua: $rua
-<br>Numero: $numero";
+echo "Nome: $nomeCliente
+<br>Data de Nascimento: $dataNasc
+<br>CPF: $cpfCliente
+<br>Telefone: $telCliente
+<br>Email: $emailCliente
+<br>Estado: $estadoCliente
+<br>CEP: $cepCliente
+<br>Cidade: $cidadeCliente
+<br>Bairro: $bairroCliente
+<br>Rua: $ruaCliente
+<br>Numero da Casa: $numCasaCliente";
  
-$sql = "INSERT INTO cliente (nome, data_nasc, cpf, telefone, email, estado, cep, cidade, bairro, rua, numero, foto_blob, foto_nome)
-        VALUES ('".$nome."', '".$data_nasc."','".$cpf."', '".$telefone."','".$email."', '".$estado."', '".$cep."', '".$cidade."','".$bairro."','".$rua."','".$numero."','".$fotoBlob."','".$fotoNome."')";
+$sql = "INSERT INTO cliente (nomeCliente, dataNasc, cpfCliente, telCliente, emailCliente, estadoCliente, cepCliente, cidadeCliente, bairroCliente, ruaCliente, numCasaCliente, foto_blob, foto_nome)
+        VALUES ('".$nomeCliente."', '".$dataNasc."','".$cpfCliente."', '".$telCliente."','".$emailCliente."', '".$estadoCliente."', '".$cepCliente."', '".$cidadeCliente."','".$bairroCliente."','".$ruaCliente."','".$numCasaCliente."','".$fotoBlob."','".$fotoNome."')";
  
 $result = mysqli_query($con, $sql);
 if ($result) {
