@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
 body{
     background-color: #F0E1DA;
 }
@@ -5,8 +9,7 @@ body{
    float:left;
    margin-left: 500px;
    margin-top: 400px;
-   font-family: 'Whereas recognition of the inherent dignity';
-  
+   font-family: 'Nerko One', cursive;
 }
 
 .escolha{
@@ -16,6 +19,8 @@ body{
     margin-left: 100px;
     margin-right: 200px;
     align-items: center;
+    font-family: 'Nerko One', cursive;
+
 }
 
 .rascunho{
