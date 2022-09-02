@@ -7,15 +7,15 @@ body{
 }
 .mensagem{
    float:left;
-   margin-left: 500px;
-   margin-top: 400px;
+   margin-left: 350px;
+   margin-top: 250px;
    font-family: 'Nerko One', cursive;
+
 }
 
-.escolha{
-  
+.escolha{ 
     float: right;
-    margin-top: 400px;
+    margin-top: 200px;
     margin-left: 100px;
     margin-right: 200px;
     align-items: center;
@@ -26,4 +26,13 @@ body{
     margin-left: 1800px;
     margin-top: 50px;
 }
-
+.btn1{
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+}
+.btn2{
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+}
