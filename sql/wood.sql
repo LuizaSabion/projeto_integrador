@@ -51,7 +51,7 @@ CREATE TABLE avaliacao (
     codAvaliar 				INT NOT NULL auto_increment,
     estrela
     dataAvaliar 			DATE,
-    sugestao				VARCHAR(300),
+    observacao				VARCHAR(300),
     fk_Cliente_codCliente	INT NOT NULL,
 	
     PRIMARY KEY (codAvaliar),
