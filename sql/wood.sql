@@ -1,4 +1,4 @@
-drop database wood;
+-- drop database wood;
 
 -- criar banco de dados
 create database wood;
@@ -14,11 +14,14 @@ CREATE TABLE cliente (
     cpfCliente 				VARCHAR(15),
     telCliente 				VARCHAR(25),
     emailCliente 			VARCHAR(100),
+    estadoCliente           		VARCHAR(100),
     cepCliente				VARCHAR(25),
     cidadeCliente			VARCHAR(100),
     bairroCliente			VARCHAR(100),
     ruaCliente				VARCHAR(100),
     numCasaCliente			VARCHAR(10),
+    foto_blob blob,
+    foto_nome varchar(100),
 
     PRIMARY KEY (codCliente)
 );
@@ -48,7 +51,7 @@ CREATE TABLE avaliacao (
     codAvaliar 				INT NOT NULL auto_increment,
     estrela
     dataAvaliar 			DATE,
-    sugestao				VARCHAR(300),
+    observacao				VARCHAR(300),
     fk_Cliente_codCliente	INT NOT NULL,
 	
     PRIMARY KEY (codAvaliar),

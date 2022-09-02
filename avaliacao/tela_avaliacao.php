@@ -17,7 +17,7 @@ session_start();
 			unset($_SESSION['msg']);
 		}
 		?>
-		<form method="POST" action="processa.php" enctype="multipart/form-data">
+		<form method="POST" action="avaliacao.php" enctype="multipart/form-data">
 			<div class="estrelas">
 				<input type="radio" id="vazio" name="estrela" value="" checked>
 				
@@ -35,8 +35,14 @@ session_start();
 				
 				<label for="estrela_cinco"><i class="fa"></i></label>
 				<input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
+
+			<div>
+            	<label for="observacoes">Escreva aqui como podemos melhorar:</label>
+            	<input name="anotacoes" type="text" size="1000">
+       	 	</div>
+				<h4>Sua opinião é muito importante para o WOOD</h4>
 				
-				<input type="submit" value="Cadastrar">
+				<input type="submit" value="Enviar Avaliação">
 				
 			</div>
 		</form>
