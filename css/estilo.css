@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Snell-Roundhand";
+    src: url('fonts/Snell-Roundhand.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.botaoperfil{
+    padding: align center;
+}
+.titulo{
+		font-size: 10rem; /*TAMANHO DA FONTE DO TÍTULO*/
+		color: rgb(255, 255, 255); /*COR DO TÍTULO*/
+		text-align: center; /*ALINHAMENTO - CENTRALIZADO*/
+        margin: 5px;
+        font-family: Snell-Roundhand;
+}
+
+.bemvindo{
+    font-size: 2rem; /*TAMANHO DA FONTE DO TÍTULO*/
+    color: rgb(255, 255, 255); /*COR DO TÍTULO*/
+    text-align: center; /*ALINHAMENTO - CENTRALIZADO*/
+}
+
+body{
+    background-color: #c3b2aa;
+    font-family: Open-Sans;
+}
+
+.container-logo {
+    margin-top: 100px;
+    display: flex;
+}
+
+.container-logo-conteudo {
+    padding-top: 8%;
+    padding-left: 25%;
+}
