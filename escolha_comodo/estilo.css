@@ -13,9 +13,7 @@ body{
     margin-top: 200px;
     margin-right: 100px;
 }
-.bt1{
-    margin-left: 50px;
-}
+
 
 .bt2{
     margin-left: 50px;
@@ -29,7 +27,5 @@ body{
     margin-top: 50px;
 }
 .carossel{
-    border: 5px solid black; 
-    width: 1900px;
-    height: 100px;
+    
 }
