@@ -4,16 +4,19 @@ body{
 .mensagem{
    float:left;
    margin-left: 500px;
-   margin-top: 200px;
+   margin-top: 400px;
    
 }
 
 .escolha{
     float: right;
-    margin-top: 200px;
-    margin-right: 100px;
+    margin-top: 400px;
+    margin-left: 100px;
+    margin-right: 200px;
 }
-
+.bt1{
+    margin-left: 50px;
+}
 
 .bt2{
     margin-left: 50px;
