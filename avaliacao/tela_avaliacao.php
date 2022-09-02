@@ -5,12 +5,16 @@ session_start();
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Avaliar</title>
+		<title>Avaliacao</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="estilo.css">
+		<form method="post" action="avaliacao.php" enctype="multipart/form-data">
+
+    
 	</head>
 	<body>
-		<h1>Avalie sua experiencia conosco!!!</h1>
+        
+		<h1 align="center">Avalie sua experiencia com o WOOD!!!</h1>
 		<?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg']."<br><br>";
@@ -18,7 +22,7 @@ session_start();
 		}
 		?>
 		<form method="POST" action="avaliacao.php" enctype="multipart/form-data">
-			<div class="estrelas">
+			<div class="estrelas"  align="center">
 				<input type="radio" id="vazio" name="estrela" value="" checked>
 				
 				<label for="estrela_um"><i class="fa"></i></label>
@@ -36,9 +40,9 @@ session_start();
 				<label for="estrela_cinco"><i class="fa"></i></label>
 				<input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
 
-			<div>
-            	<label for="observacoes">Escreva aqui como podemos melhorar:</label>
-            	<input name="anotacoes" type="text" size="1000">
+			<div name=texto>
+            	<label for="observacao">Escreva aqui como podemos melhorar:</label>
+            	<input name="observacao" type="text" size="1000">
        	 	</div>
 				<h4>Sua opinião é muito importante para o WOOD</h4>
 				
