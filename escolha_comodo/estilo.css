@@ -5,27 +5,21 @@ body{
    float:left;
    margin-left: 500px;
    margin-top: 400px;
+  
    
 }
 
 .escolha{
+  
     float: right;
     margin-top: 400px;
     margin-left: 100px;
     margin-right: 200px;
-}
-.bt1{
-    margin-left: 50px;
+    align-items: center;
 }
 
-.bt2{
-    margin-left: 50px;
-}
-
-.bt3{
-    margin-left: 50px;
-}
 .rascunho{
     margin-left: 1800px;
     margin-top: 50px;
 }
+
