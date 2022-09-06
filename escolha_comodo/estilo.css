@@ -1,12 +1,12 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+*{
+    margin: 0;
+    padding: 0;
+}
 
-body{
+.body{
     background-color: #F0E1DA;
 }
 .mensagem{
-   float:left;
    margin-left: 350px;
    margin-top: 250px;
    font-family: 'Nerko One', cursive;
@@ -14,25 +14,11 @@ body{
 }
 
 .escolha{ 
-    float: right;
-    margin-top: 200px;
-    margin-left: 100px;
     margin-right: 200px;
-    align-items: center;
-    font-family: 'Nerko One', cursive;
 }
 
 .rascunho{
     margin-left: 1800px;
     margin-top: 50px;
 }
-.btn1{
-    border-radius: 3px;
-    width: 80px;
-    height: 30px;
-}
-.btn2{
-    border-radius: 3px;
-    width: 200px;
-    height: 40px;
-}
+
