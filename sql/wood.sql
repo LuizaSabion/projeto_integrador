@@ -14,7 +14,7 @@ CREATE TABLE cliente (
     cpfCliente 				VARCHAR(15),
     telCliente 				VARCHAR(25),
     emailCliente 			VARCHAR(100),
-    estadoCliente           		VARCHAR(100),
+    estadoCliente           VARCHAR(100),
     cepCliente				VARCHAR(25),
     cidadeCliente			VARCHAR(100),
     bairroCliente			VARCHAR(100),
