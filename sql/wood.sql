@@ -14,7 +14,7 @@ CREATE TABLE cliente (
     cpfCliente 				VARCHAR(15),
     telCliente 				VARCHAR(25),
     emailCliente 			VARCHAR(100),
-    estadoCliente           		VARCHAR(100),
+    estadoCliente           VARCHAR(100),
     cepCliente				VARCHAR(25),
     cidadeCliente			VARCHAR(100),
     bairroCliente			VARCHAR(100),
@@ -49,9 +49,9 @@ CREATE TABLE pagamento (
 
 CREATE TABLE avaliacao (
     codAvaliar 				INT NOT NULL auto_increment,
-    estrela
+    estrela                 INT,
     dataAvaliar 			DATE,
-    observacao				VARCHAR(300),
+    observacao				VARCHAR(1000),
     fk_Cliente_codCliente	INT NOT NULL,
 	
     PRIMARY KEY (codAvaliar),

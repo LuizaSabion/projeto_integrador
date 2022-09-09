@@ -7,15 +7,12 @@
     <title>ProjetoIntegrador</title>
 </head>
 <body>
-    <h2>Cadastro de Moveis</h2>
+    <h2>Cadastro de Móveis</h2>
     <hr>
-    <form method="post" action="cadastro_movel.php" enctype="multipart/form-data">
+    <form method="post" action="cadastro_moveis.php" enctype="multipart/form-data">
 <body>
-    <form action="cadastro_movel.php" method="post" enctype='multipart/form-data'>
+    <form action="cadastro_moveis.php" method="post" enctype='multipart/form-data'>
         <table align="center">
-            
-            
-            
            
             <tr>
                 <th colspan="2">Informações Gerais</th>
@@ -24,19 +21,19 @@
                 <td>
                     <p>Tipo:</p>
                 </td>
-                <td><input type="text" name="nome" size="100"></td>
+                <td><input type="text" name="categoria" size="100"></td>
             </tr>
             <tr>
                 <td>
                     <p>Cor:</p>
                 </td>
-                <td><input type="date" name="data"></td>
+                <td><input type="text" name="cor"></td>
             </tr>
             <tr>
                 <td>
                     <p>Material:</p>
                 </td>
-                <td><input type="text" name="cpf_cliente" size="14"></td>
+                <td><input type="text" name="material" size="14"></td>
             </tr>
             
             <tr>
@@ -45,34 +42,34 @@
                 </td>
             </tr>
             <tr>
-                <th colspan="2">Informações técnicas</th>
+                <th colspan="2">Informações Técnicas</th>
             </tr>
-           
+            <tr>
+                <td>
+                    <p>Comprimento:</p>
+                </td>
+                <td><input type="text" name="comprimento" id="comprimento" ></td>
+            </tr>
             <tr>
                 <td>
                     <p>Largura:</p>
                 </td>
-                <td><input type="text" name="cep" id="cep" ></td>
+                <td><input type="text" name="largura" id="largura" ></td>
             </tr>
             <tr>
                 <td>
-                    <p>quantidade Disponivel:</p>
+                    <p>Quantidade Disponivel:</p>
                 </td>
-                <td><input type="text" name="cidade" id="cidade" ></td>
+                <td><input type="text" name="quantidade" id="quantidade" ></td>
             </tr>
             
             <tr>
                 <td>
                     <p>Preço: R$</p>
                 </td>
-                <td><input type="text" name="bairro" id="bairro" ></td>
+                <td><input type="text" name="preco" id="preco" ></td>
             </tr>           
-            <tr class="form-item">
-                
-                <td><input type="file" id="foto" name="foto" accept="image/*" /></td>
-            <tr class="form-item">
-                <tr>
-                    <td colspan="2"><br><input type="submit" value="Cadastrar"></td>
+                    <td colspan="2"><br><input type="submit" value="Cadastrar Móvel"></td>
                 </tr>
                 
             </div>
