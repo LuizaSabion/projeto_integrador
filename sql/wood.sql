@@ -49,9 +49,9 @@ CREATE TABLE pagamento (
 
 CREATE TABLE avaliacao (
     codAvaliar 				INT NOT NULL auto_increment,
-    estrela
+    estrela                 INT,
     dataAvaliar 			DATE,
-    observacao				VARCHAR(300),
+    observacao				VARCHAR(1000),
     fk_Cliente_codCliente	INT NOT NULL,
 	
     PRIMARY KEY (codAvaliar),
