@@ -11,17 +11,18 @@
     padding: align center;
 }
 .titulo{
-		font-size: 10rem; /*TAMANHO DA FONTE DO TÍTULO*/
+		font-size: 6rem; /*TAMANHO DA FONTE DO TÍTULO*/
 		color: rgb(255, 255, 255); /*COR DO TÍTULO*/
 		text-align: center; /*ALINHAMENTO - CENTRALIZADO*/
         margin: 5px;
         font-family: Snell-Roundhand;
 }
 
-.bemvindo{
+.moveispersonalizados{
     font-size: 2rem; /*TAMANHO DA FONTE DO TÍTULO*/
     color: rgb(255, 255, 255); /*COR DO TÍTULO*/
     text-align: center; /*ALINHAMENTO - CENTRALIZADO*/
+    font-family: inherit;
 }
 
 body{

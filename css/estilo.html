@@ -14,13 +14,106 @@
     <div class="container-logo">
         <div class="container-logo-nome container-logo-conteudo">
             <h2 class="titulo"> Wood Designer</h2>
-            <h3 class="bemvindo">MÓVEIS PERSONALIZADOS</h3>
-            <a id="botaoperfil" href="cadastro_usuario.html" ><img src="user.png" width="50" height="50"></a>
+            <h3 class="moveispersonalizados">MÓVEIS PERSONALIZADOS</h3>
+            <!--<a id="botaoperfil" href="cadastro_usuario.html" ><img src="user.png" width="50" height="50"></a>-->
         </div>
         <div class="container-logo-img container-logo-conteudo">
             <img src="">
         </div>
     </div>
     
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body {
+  margin: 0;
+}
+
+
+.subcabecalho {
+  overflow: hidden;
+  background-color: #af877f; 
+}
+
+.subcabecalho a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.cabecalhogeral {
+  float: left;
+  overflow: hidden;
+}
+
+.cabecalhogeral .cabecalhotres {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subcabecalho a:hover, .cabecalhogeral:hover .cabecalhotres {
+  background-color: #af877f;
+}
+
+.cabecalhogeral-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #af877f;
+  width: 100%;
+  z-index: 1;
+}
+
+.cabecalhogeral:hover .cabecalhogeral-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="subcabecalho">
+  <div class="cabecalhogeral">
+    <button class="cabecalhotres">Login</button>
+    <div class="cabecalhogeral-content">
+      <a href="cadastro_usuario.html">Cadastrar</a>
+      <a href="">Entrar</a>
+    </div>
+  </div> 
+
+  <div class="cabecalhogeral">
+    <button class="cabecalhotres">Nossos Contatos</button>
+    <div class="cabecalhogeral-content">
+      <a href="#instagram">Instagram</a>
+      <a href="#facebook">Facebook</a>
+      <a href="#whatsapp">Whatsapp</a>
+      <a href="#telefoneligar">Telefone</a>
+    </div>
+  </div> 
+
+  <div class="cabecalhogeral">
+    <button class="cabecalhotres">Quem Somos</button>
+    <div class="cabecalhogeral-content">
+      <a href="#quemsomos"></a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
