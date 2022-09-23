@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA -Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetoIntegrador</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Projeto Integrador</title>
 </head>
 <body>
-    <h2>Cadastro de Usuarios</h2>
+    <h2 align="center">Cadastro de Usuários</h2>
     <hr>
     <form method="post" action="cadastro_usuario.php" enctype="multipart/form-data">
-<body>
+<body class="cssdocadastro" >
     <form action="cadastro_usuario.php" method="post" enctype='multipart/form-data'>
         <table align="center">
            
             <tr>
-                <th colspan="2">Dados pessoais</th>
+                <th colspan="2">Dados Pessoais</th>
             </tr>
             <tr>
                 <td>
@@ -27,7 +28,7 @@
                 <td>
                     <p>Data de Nascimento:</p>
                 </td>
-                <td><input type="date" name="data_n"></td>
+                <td><input type="date" name="nascimento"></td>
             </tr>
             <tr>
                 <td>
@@ -138,6 +139,12 @@
             </div>
         </table>
     </form>
+<style>
+    #cssdocadastro{
+        background-color: #c3b2aa;
+
+    }
+</style>
 </body>
  
 </html>
