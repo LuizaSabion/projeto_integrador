@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+}
+
+.color-code {
+    width: 70px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn {
+    position: fixed;
+    top: 90%;
+    left: 47%;
+    cursor: pointer;
+}
+
