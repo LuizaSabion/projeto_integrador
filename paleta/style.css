@@ -2,9 +2,12 @@
     margin: 0;
 }
 
-.container {
+.container {  
     display: flex;
-    height: 100vh;
+    position: relative;
+    height: 50vh;
+    top: 24.5rem;
+
 }
 
 .colors {
