@@ -1,22 +1,47 @@
-function generateColors() {
+let colors = Array(5).fill('#FFFFFF');
+let savedColors = [];
 
-    const chars = '0123456789ABCDEF'
-    let color = '#'
-
-    for(let i = 0; i < 6; i++) {
-        color += chars.charAt(math.floor(math.random() * chars.length))
-    }
-
-    return color;
-
+const renderColors = () => {
+    colors.forEach((color, index) => {
+        document.querySelector(`#color-${index+1}`).style.backgroundColor = color;
+        document.querySelector(`#txt-color-${index+1}`).innerText = color;
+    });
 }
 
-document.getElementById('btn-action').addEventListener('click', () => {
-    let color = generateColors()
-    for(let i = 0; i < 5; i++){
-        let div_color = document.getElementById(`color-${i+1}`)
-        div_color.style.backgroundColor = color     
-        let txt_color = document.getElementById(`txt-color-${i+1}`)
-        txt_color.textContent = `${color}`
+document.querySelector('#btn-action').onclick = () => {
+    setRandomColorsArray();
+    renderColors();
+}
+
+function generateColor() {
+    const chars = '0123456789ABCDEF'
+    let color   = '#'
+    for(let i = 0; i < 6; i++) {
+        color += chars.charAt(Math.floor(Math.random() * chars.length))
     }
-})
+    return color;
+}
+
+function setRandomColorsArray() {
+    colors = colors.map(color => color = generateColor());
+    if (savedColors.length) savedColors.forEach(savedColor => colors[savedColor.index] = savedColor.color);
+}
+
+function copyColor(num) {
+    let myColor = document.getElementById(`txt-color-${num}`)
+    myColor.select()
+    document.execCommand('copy')
+}
+
+function lockColor(index) {
+    const savedColor = { index: index, color: colors[index] };
+    const savedColorIndex = savedColors.findIndex(sc => 
+        sc.index === savedColor.index && sc.color === savedColor.color);
+    if(savedColorIndex === -1) {
+        savedColors.push(savedColor);
+        document.querySelector(`#lock-icon-${index+1}`).textContent = 'lock';
+    } else {
+        savedColors.splice(savedColorIndex, 1);
+        document.querySelector(`#lock-icon-${index+1}`).textContent = 'lock_open';
+    }
+}
