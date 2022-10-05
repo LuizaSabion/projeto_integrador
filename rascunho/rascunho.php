@@ -23,7 +23,7 @@
     </center>
     <table align="center" border>
         <tr>
-            <th><?php><?></th>
+           <!-- <th><?php><?></th> -->
             <th>NOME</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
