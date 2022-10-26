@@ -3,11 +3,11 @@
 }
 
 .container {  
+    position: fixed;
     display: flex;
     position: relative;
     height: 50vh;
-    top: 22.37rem;
-
+    top: 5rem;
 }
 
 .colors {
